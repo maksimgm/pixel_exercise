@@ -1,7 +1,3 @@
-window.onload= function(){
-  
-};
-
 var purple = "rgb(120,81,169)";
 var red = "rgb(255,0,0)";
 var orange = "rgb(255,165,0)";
@@ -16,14 +12,14 @@ var smallDiv;
 
 
 
-for(i=0; i<64; i++){
+for(i=0; i<1995; i++){
   smallDiv = document.createElement('div');
   document.getElementsByTagName('body')[0].appendChild(smallDiv);
-  smallDiv.style.width = "11.1%";
-  smallDiv.style.paddingBottom = "11.1%";
+  smallDiv.style.width = "1%";
+  smallDiv.style.paddingBottom = "1%";
   smallDiv.style.float = "left";
   smallDiv.style.border = "1px black solid";
-  smallDiv.style.borderCollapse="collapse";
+  // smallDiv.style.borderCollapse="collapse";
   smallDiv.style.margin = "1px";
   
 
@@ -41,11 +37,11 @@ for(i=0; i<7; i++){
   document.getElementsByTagName('body')[0].appendChild(colorDiv);
   // style to be smaller
   colorDiv.style.backgroundColor = colorPal[i];
-  colorDiv.style.width = "11.1%";
-  colorDiv.style.paddingBottom = "11.1%";
+  colorDiv.style.width = "2%";
+  colorDiv.style.paddingBottom = "1%";
   colorDiv.style.float = "left";
   colorDiv.style.border = "1px black solid";
-  colorDiv.style.borderCollapse="collapse";
+  // colorDiv.style.borderCollapse="collapse";
 
   colorDiv.addEventListener('click',callback);
 
