@@ -1,5 +1,5 @@
 window.onload= function(){
-  colorListener();  
+  
 };
 
 var purple = "rgb(120,81,169)";
@@ -29,8 +29,8 @@ for(i=0; i<64; i++){
 
 
   smallDiv.addEventListener('click', function(){
-    this.style.backgroundColor = "colorPal[i]";
-    // 
+    this.style.backgroundColor = emptyColor;
+    // smallDiv.style.backgroundColor
     
   });
 }
@@ -46,15 +46,16 @@ for(i=0; i<7; i++){
   colorDiv.style.float = "left";
   colorDiv.style.border = "1px black solid";
   colorDiv.style.borderCollapse="collapse";
-  
 
-  // // add event listener to set  color
-  function colorListener(){
-    smallDiv[i].addEventListener('click',callback);
-
-  }
+  colorDiv.addEventListener('click',callback);
 
    function callback(){
-     emptyColor = this.style.backgroundColor;
+    // var divGetter = document.getElementsByTagName('div')[0];
+    emptyColor = this.style.backgroundColor;  
    }
 }
+
+  // // add event listener to set  color
+  // function colorListener(){
+    
+  // }
